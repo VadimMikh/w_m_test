@@ -1,43 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-    <head>
-		<meta charset="UTF-8"/>
-<title>Main</title>
-<meta http-equiv="x-ua-compatible" content="ie=edge"/>
-<link rel="stylesheet" href="css/libs.min.css"/>
-<link rel="stylesheet" href="css/main.css"/>
-<!--[if lt IE 9]>
+<head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
+    <link rel="stylesheet" href="css/libs.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 <![endif]-->
-	</head>
+</head>
 
 <body>
-	<div style="height: 0; width: 0; position: absolute; visibility: hidden">
-  <!-- inject:svg --><svg xmlns="http://www.w3.org/2000/svg"><symbol id="star-large" viewBox="0 0 18.067 18"><path d="M9.013 14.469L15 18l-2-7 5.067-3.95L12 7 9.013 0 6 7H0l5 4-2 7 6.013-3.531z"/></symbol><symbol id="whatsapp-logo" viewBox="0 0 90 90"><path d="M90 43.841c0 24.213-19.779 43.841-44.182 43.841a44.256 44.256 0 0 1-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 0 1-6.34-22.637C1.635 19.628 21.416 0 45.818 0 70.223 0 90 19.628 90 43.841zM45.818 6.982c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61L11.107 79.14l14.275-4.537A37.122 37.122 0 0 0 45.819 80.7c20.481 0 37.146-16.533 37.146-36.857S66.301 6.982 45.818 6.982zm22.311 46.956c-.273-.447-.994-.717-2.076-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.358-1.717-.538-2.438.537-.721 1.076-2.797 3.495-3.43 4.212-.632.719-1.263.809-2.347.271-1.082-.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-.631-1.075-.066-1.656.475-2.191.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.717.182-1.344-.09-1.883-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.792-2.436-1.792-.631 0-1.354-.09-2.076-.09s-1.896.269-2.889 1.344c-.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113.541.716 7.49 11.92 18.5 16.223C58.2 65.771 58.2 64.336 60.186 64.156c1.984-.179 6.406-2.599 7.312-5.107.9-2.512.9-4.663.631-5.111z"/></symbol></svg><!-- endinject -->
-</div>
 
-	<header class="header">HEADER</header>
-	
-	<div class="content">
-	
-		<div class="star">
-			<svg class="svg-icon star-large">
-    <use xlink:href="#star-large"></use>
-</svg>
-		</div>
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+        <!-- inject:svg -->
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol id="star-large" viewBox="0 0 18.067 18">
+                <path d="M9.013 14.469L15 18l-2-7 5.067-3.95L12 7 9.013 0 6 7H0l5 4-2 7 6.013-3.531z" />
+            </symbol>
+            <symbol id="whatsapp-logo" viewBox="0 0 90 90">
+                <path d="M90 43.841c0 24.213-19.779 43.841-44.182 43.841a44.256 44.256 0 0 1-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 0 1-6.34-22.637C1.635 19.628 21.416 0 45.818 0 70.223 0 90 19.628 90 43.841zM45.818 6.982c-20.484 0-37.146 16.535-37.146 36.859 0 8.065 2.629 15.534 7.076 21.61L11.107 79.14l14.275-4.537A37.122 37.122 0 0 0 45.819 80.7c20.481 0 37.146-16.533 37.146-36.857S66.301 6.982 45.818 6.982zm22.311 46.956c-.273-.447-.994-.717-2.076-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.358-1.717-.538-2.438.537-.721 1.076-2.797 3.495-3.43 4.212-.632.719-1.263.809-2.347.271-1.082-.537-4.571-1.673-8.708-5.333-3.219-2.848-5.393-6.364-6.025-7.441-.631-1.075-.066-1.656.475-2.191.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.717.182-1.344-.09-1.883-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.792-2.436-1.792-.631 0-1.354-.09-2.076-.09s-1.896.269-2.889 1.344c-.992 1.076-3.789 3.676-3.789 8.963 0 5.288 3.879 10.397 4.422 11.113.541.716 7.49 11.92 18.5 16.223C58.2 65.771 58.2 64.336 60.186 64.156c1.984-.179 6.406-2.599 7.312-5.107.9-2.512.9-4.663.631-5.111z"
+                />
+            </symbol>
+        </svg>
+        <!-- endinject -->
+    </div>
 
-		<svg class="svg-icon whatsapp-logo">
-    <use xlink:href="#whatsapp-logo"></use>
-</svg>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <a href="#info" class="menu_item">Личная информация</a>
+                <a href="#skills" class="menu_item">Опыт</a>
+                <a href="#js" class="menu_item">JavaScript</a>
+                <a href="#about" class="menu_item">О себе</a>
+            </nav>
+        </div>
+    </header>
 
-	</div>
+    <div class="content">
+        <a href="" class="menu_trigger"><span></span></a>
+        <a href="" class="layer"></a>
+        <form action="" method="POST">
+            <div class="first">
+                <div class="container">
+                    <h1>Анкета</h1>
+                </div>
+            </div>
+            <section class="info" id="info">
+                <div class="container">
+                    <h2 class="section_heading">Личная информация</h2>
+                    <div class="personal">
+                        <div class="row">
+                            <input class="input" type="text" name="name" placeholder="ФИО" id="name" />
+                        </div>
+                        <div class="row">
+                            <select class="select" name="birth" id="birth" data-placeholder="Год рождения">
+                                <option value=""></option>
+                                <option value="1980">1980</option>
+                                <option value="1981">1981</option>
+                                <option value="1982">1983</option>
+                                <option value="1983">1984</option>
+                                <option value="1984">1985</option>
+                                <option value="1985">1986</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <input class="input" type="text" name="city" placeholder="Место проживания" id="city" />
+                        </div>
+                        <div class="row">
+                            <input class="input" type="text" name="skype" placeholder="Skype" id="skype" />
+                        </div>
+                        <div class="row">
+                            <input class="input" type="text" name="email" placeholder="E-mail" id="email" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="container">
+                    <h2 class="section_heading">Расскажите о своем опыте</h2>
+                    <div class="checks">
+                        <div class="group">
+                            <input type="checkbox" class="hidden" id="ch1" />
+                            <label for="ch1">
+                                <div class="l_mark"></div>
+                                <span>БЭМ/OOCSS</span>
+                            </label>
+                            <input type="checkbox" class="hidden" id="ch2" />
+                            <label for="ch2">
+                                <div class="l_mark"></div>
+                                <span>Stylus/LESS/SASS</span>
+                            </label>
+                            <input type="checkbox" class="hidden" id="ch3" />
+                            <label for="ch3">
+                                <div class="l_mark"></div>
+                                <span>Работаю с SVG</span>
+                            </label>
+                        </div>
+                        <div class="group">
+                            <input type="checkbox" class="hidden" id="ch4" />
+                            <label for="ch4">
+                                <div class="l_mark"></div>
+                                <span>Верстаю семантично</span>
+                            </label>
+                            <input type="checkbox" class="hidden" id="ch5" />
+                            <label for="ch5">
+                                <div class="l_mark"></div>
+                                <span>ES2015/ES2016</span>
+                            </label>
+                            <input type="checkbox" class="hidden" id="ch6" />
+                            <label for="ch6">
+                                <div class="l_mark"></div>
+                                <span>Gulp/GRUNT</span>
+                            </label>
+                        </div>
+                        <div class="group">
+                            <input type="checkbox" class="hidden" id="ch7" />
+                            <label for="ch7">
+                                <div class="l_mark"></div>
+                                <span>Webpack</span>
+                            </label>
+                            <input type="checkbox" class="hidden" id="ch8" />
+                            <label for="ch8">
+                                <div class="l_mark"></div>
+                                <span>jQuery</span>
+                            </label>
+                            <input type="checkbox" class="hidden" id="ch9" />
+                            <label for="ch9">
+                                <div class="l_mark"></div>
+                                <span>Ипользую Git</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="js" id="js">
+                <div class="container">
+                    <h2 class="section_heading">Уровень владения JavaScript</h2>
+                    <div class="level">
+                        <input type="text" class="hidden js_level" id="js_level" name="js_level" />
+                        <div class="level_desc">
+                            <a href="#" class="level_desc_item" data-level="1">
+                                <span class="desctop">Не владею</span>
+                                <span class="mobile">1</span>
+                            </a>
+                            <a href="#" class="level_desc_item" data-level="2">
+                                <span class="desctop">Использую готовые <br/>решения</span>
+                                <span class="mobile">2</span>
+                            </a>
+                            <a href="#" class="level_desc_item" data-level="3">
+                                <span class="desctop">Использую готовые решения и умею и переделывать</span>
+                                <span class="mobile">3</span>
+                            </a>
+                            <a href="#" class="level_desc_item" data-level="4">
+                                <span class="desctop">Пишу сложный JS с нуля</span>
+                                <span class="mobile">4</span>
+                            </a>
+                        </div>
+                        <div class="range_wrap">
+                            <div class="range">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="curs"></div>
+                    </div>
+                    <ol class="range_list mobile">
+                        <li>Не владею</li>
+                        <li>Использую готовые решения</li>
+                        <li>Использую готовые решения и умею и переделывать</li>
+                        <li>Пишу сложный JS с нуля</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="container">
+                    <h2 class="section_heading">Расскажите о себе</h2>
+                    <div class="about_inner">
+                        <p class="about_desc">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</p>
+                        <textarea class="textarea" name="aboutself" id="aboutself" cols="30" rows="10" placeholder="Понравилась тем, что..."></textarea>
+                    </div>
+                </div>
+            </section>
+            <input type="submit" class="submit" value="Готово" />
+        </form>
+    </div>
 
-	<footer class="footer">FOOTER</footer>
-	
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script> -->
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+
 
 </body>
+
 </html>
