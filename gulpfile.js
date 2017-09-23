@@ -85,7 +85,7 @@ gulp.task('sass', function () {
 	return gulp.src('app/scss/**/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass({ outputStyle: 'compact' }).on('error', sass.logError))
-		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7', 'Firefox ESR', 'android 4'], { cascade: true }))
+		.pipe(autoprefixer(['last 50 versions', '> 1%', 'ie 8', 'ie 7', 'Firefox ESR', 'android 4'], { cascade: true }))
 		.pipe(stripCssComments({ preserve: /^\*|^\!/ }))
 		.pipe(removeEmptyLines())
 		.pipe(sourcemaps.write('../maps'))
@@ -151,7 +151,7 @@ gulp.task('babel', function () {
 
 gulp.task('scripts', function () {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/jquery/dist/jquery.min.js'
 	])
 		.pipe(concat('jquery.min.js'))
 		.pipe(uglify({
@@ -163,8 +163,8 @@ gulp.task('scripts', function () {
 
 		// Plugins including
 		gulp.src([
-			'app/libs/fancybox/source/jquery.fancybox.js'
-
+			'app/libs/fancybox/source/jquery.fancybox.js',
+			'app/libs/jquery.form-styler/dist/jquery.formstyler.min.js'
 		])
 			// .pipe(uglify({
 			//           output: {

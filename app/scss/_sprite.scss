@@ -9,33 +9,33 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
-$s-arrow-name: 's-arrow';
-$s-arrow-x: 39px;
-$s-arrow-y: 0px;
-$s-arrow-offset-x: -39px;
-$s-arrow-offset-y: 0px;
-$s-arrow-width: 8px;
-$s-arrow-height: 5px;
-$s-arrow-total-width: 47px;
-$s-arrow-total-height: 40px;
-$s-arrow-image: '../img/sprite.png';
-$s-arrow: (39px, 0px, -39px, 0px, 8px, 5px, 47px, 40px, '../img/sprite.png', 's-arrow', );
-$s-inst-name: 's-inst';
-$s-inst-x: 0px;
-$s-inst-y: 0px;
-$s-inst-offset-x: 0px;
-$s-inst-offset-y: 0px;
-$s-inst-width: 39px;
-$s-inst-height: 40px;
-$s-inst-total-width: 47px;
-$s-inst-total-height: 40px;
-$s-inst-image: '../img/sprite.png';
-$s-inst: (0px, 0px, 0px, 0px, 39px, 40px, 47px, 40px, '../img/sprite.png', 's-inst', );
-$spritesheet-width: 47px;
-$spritesheet-height: 40px;
+$s-arrow-down-name: 's-arrow_down';
+$s-arrow-down-x: 23px;
+$s-arrow-down-y: 0px;
+$s-arrow-down-offset-x: -23px;
+$s-arrow-down-offset-y: 0px;
+$s-arrow-down-width: 14px;
+$s-arrow-down-height: 9px;
+$s-arrow-down-total-width: 37px;
+$s-arrow-down-total-height: 26px;
+$s-arrow-down-image: '../img/sprite.png';
+$s-arrow-down: (23px, 0px, -23px, 0px, 14px, 9px, 37px, 26px, '../img/sprite.png', 's-arrow_down', );
+$s-curs-name: 's-curs';
+$s-curs-x: 0px;
+$s-curs-y: 0px;
+$s-curs-offset-x: 0px;
+$s-curs-offset-y: 0px;
+$s-curs-width: 23px;
+$s-curs-height: 26px;
+$s-curs-total-width: 37px;
+$s-curs-total-height: 26px;
+$s-curs-image: '../img/sprite.png';
+$s-curs: (0px, 0px, 0px, 0px, 23px, 26px, 37px, 26px, '../img/sprite.png', 's-curs', );
+$spritesheet-width: 37px;
+$spritesheet-height: 26px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($s-arrow, $s-inst, );
-$spritesheet: (47px, 40px, '../img/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($s-arrow-down, $s-curs, );
+$spritesheet: (37px, 26px, '../img/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //
