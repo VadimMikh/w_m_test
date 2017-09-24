@@ -127,7 +127,8 @@ body * {
     font-weight: 400;
     text-align: center;
 }
-.jq-selectbox__select-text.placeholder {
+.jq-selectbox__select-text {
+    min-width: 100%;
     padding: 0 40px;
 }
 .jq-selectbox__trigger {
