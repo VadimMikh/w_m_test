@@ -164,7 +164,8 @@ gulp.task('scripts', function () {
 		// Plugins including
 		gulp.src([
 			'app/libs/fancybox/source/jquery.fancybox.js',
-			'app/libs/jquery.form-styler/dist/jquery.formstyler.min.js'
+			'app/libs/jquery.form-styler/dist/jquery.formstyler.min.js',
+			'app/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js'
 		])
 			// .pipe(uglify({
 			//           output: {

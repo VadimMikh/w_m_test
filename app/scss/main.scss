@@ -76,20 +76,49 @@ body * {
         margin-bottom: 25px;
     }
 }
-.input {
-    display: block;
+.row-inner {
     width: 100%;
     max-width: 520px;
     margin: 0 auto;
     height: 60px;
     border: 1px solid #e5e5e5;
     border-radius: 5px;
-    font-size: 24px;
-    font-weight: 400;
-    padding: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.opened {
+        border: 1px solid #435993;
+    }
+    & .input {
+        pointer-events: none;
+    }
+    &.filled .input {
+        pointer-events: auto;
+    }
+}
+.input {
+    width: 100%;
     text-align: center;
-    @include placeholder {
+    margin-top: 13px;
+    outline: none!important;
+    border: none;
+    color: #1c1c1c;
+    &-label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: 400;
+        padding: 0 10px;
+        text-align: center;
         color: #c8c8c8;
+        transition: .3s;
+        .row-inner.opened & {
+            font-size: 14px;
+            transform: translate(-50%, -130%);
+        }
     }
 }
 .jq-selectbox__search input {
@@ -158,10 +187,13 @@ body * {
     ul {
         padding: 0;
         li {
-            color: #c8c8c8;
-            font-size: 24px;
-            font-weight: 400;
-            text-align: center;
+            color: #435993;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 36px;
+            &:first-of-type {
+                display: none;
+            }
         }
     }
 }
@@ -195,6 +227,11 @@ section {
                 margin-right: 10px;
                 position: relative;
             }
+            &:hover {
+                .l_mark {
+                    background-color: #e9efff;
+                }
+            }
             span {
                 color: black;
                 font-size: 16px;
@@ -203,7 +240,7 @@ section {
             }
         }
         input[type="checkbox"]:checked + label .l_mark {
-            background: url("../img/check.png") center center no-repeat;
+            background: #435993 url("../img/check_w.png") center center no-repeat;
         }
     }
 }
@@ -287,17 +324,19 @@ section {
     .range {
         width: 100%;
         height: 25px;
-        background-color: #e8e8e8;
+        background: linear-gradient(to right, #ccb1f1, #435993);
         transform: rotate(-1deg) translateY(15px);
         position: relative;
         z-index: 5;
         &:before {
             content: "";
             display: block;
+            position: absolute;
+            right: 0;
             width: 50%;
             height: 100%;
             transition: .6s;
-            background: linear-gradient(to right, #ccb1f1, #8986c3);
+            background-color: #e8e8e8;
         }
         .line {
             position: absolute;
@@ -344,16 +383,16 @@ section {
 }
 
 .l1 .range:before {
-    width: 0;
+    width: 100%;
 }
 .l2 .range:before {
-    width: 25%;
+    width: 75%;
 }
 .l3 .range:before {
     width: 50%;
 }
 .l4 .range:before {
-    width: 100%;
+    width: 0;
 }
 .about {
     padding-left: 10px;
@@ -405,6 +444,15 @@ section {
     &:hover {
         transform: scale(1.1);
     }
+}
+.mCSB_inside>.mCSB_container {
+    margin-right: 0;
+}
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: #FFF;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #d9d9d9;
 }
 .menu_trigger {
     display: none;
@@ -534,5 +582,10 @@ section {
     }
     .first {
         padding-top: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .input-label, .jq-selectbox__select-text, .jq-selectbox__dropdown ul li {
+        font-size: 18px;
     }
 }
